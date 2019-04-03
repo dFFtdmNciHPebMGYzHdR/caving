@@ -1,3 +1,10 @@
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.cave {
+    max-width: -webkit-fill-available;
+    ma
+}
+
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button {
@@ -8,7 +15,6 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
   padding: 8rem 0 7rem;
-  text-align: center;
 }
 .section-heading,
 .section-description {
