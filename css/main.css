@@ -1,0 +1,22 @@
+body, input, select, textarea {
+    background-color: #eee;
+    padding: auto;
+    color: #222;
+    font-family: "Roboto", sans-serif;
+    font-size: 16pt;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.65em;
+}
+
+h1 {
+    color: #222;
+}
+
+.cover {
+    width: 100%;
+}
+
+.container {
+    margin: 2em;
+}
