@@ -111,3 +111,10 @@ body {
 a {
     text-align: center;
 }
+
+button {
+    white-space: normal;
+    padding: 0 0 0 0;
+    height: auto;
+    width: 100%;
+}
