@@ -48,74 +48,72 @@
         <div class="row">
           <p>The artificial cave project is a vision inspired by the late Paul Dold, who sadly lost his life in 2016. Paul was a very active member of Horsham District Scouts and was himself a Cub, Scout, Venture Scout, Leader and Group Scout Leader. Paul was also a member of the South East Cave Rescue Organisation (SECRO) and a proud recipient of the Jubilee medal for services to caving. Scouting introduced Paul to caving and Paul dreamt of building a training facility to introduce and teach caving to the next generation of scouts.</p>
         </div>
-        
-        <div class="row">
 
-            <div class="row one-half column">
+        <div class="row">
+            <div class="row">
                 <div class="one-half column row">
-                    <img style="max-width: 100%;" src="images/hangfast.jpg" />
+                    <img id="slideshow" style="max-width: 100%; max-height: 16em;" src="images/3dmodel.jpg" />
+                    <script>
+                        var next = 0;
+                        var images = ["hangfast.jpg", "donate.jpg", "3dmodel.jpg", "plan.jpg"];
+                        setInterval(function() { 
+                                document.getElementById("slideshow").src = "images/" + images[next];
+                                next = (next + 1) % images.length;
+                        }, 3000);
+                    </script>
                 </div>
                 <div class="one-half column">
                     <p>Our mission is to build an Artificial cave system at the Horsham District Scout Campsite in memory of Paul. Phase One has now been completed with planning permission obtained in 2018 and the project fully costed.</p>
-                </div>
-                <div class="row">
                     <p>Phase 2 involves the ground works and construction of the metal building.</p>
                     <p>Phase 3 involves the purchase and installation of the specialist artificial cave system.</p>
                 </div>
             </div>
-            <div class="row one-half column" style="text-align: center;">
-                <div class="row" style="display: flex; align-items: center;">
-                <div class="one-half column">
-                    <a href="https://wonderful.org/fundraiser/pauldoldmemorialartificialcaveproject-33f78d15">
-                    <img style="max-width: 100%;" src="images/hangfast.jpg" />
-                    </a>
-                </div>
-                <div class="one-half column">
-                    <a href="https://wonderful.org/fundraiser/pauldoldmemorialartificialcaveproject-33f78d15">
-                    <button style="white-space: normal; height: auto;">
-                        Please donate via Wonderful.org
-                    </button>
-                    </a>
-                </div>
-                </div>
-                <div class="row" style="display: flex; align-items: center;">
+            <div class="row" style="text-align: center;">
+                <div class="row links" style="display: flex; align-items: center;">
                 <div class="one-half column">
                     <a href="thecave.html">
-                        <img style="max-width: 100%;" src="images/hangfast.jpg" />
-                        <button>About the artificial cave</button>
+                        <button style="">
+                            <img src="images/cave.png" />
+                            <p>About the artificial cave</p>
+                        </button>
                     </a>
                 </div>
                 <div class="one-half column">
-                        <a href="caving.html">
-                    <img style="max-width: 100%;" src="images/hangfast.jpg" />
-                    <button>About caving</button>
+                    <a href="https://wonderful.org/fundraiser/pauldoldmemorialartificialcaveproject-33f78d15">
+                            <button style="" >
+                                <img src="https://www.wonderful.org/assets/img/logo-pos.svg"/>
+                                    <p>Please donate via Wonderful.org</p>
+                            </button>
                     </a>
                 </div>
 
                 </div>
             </div>
+
           
         </div>
         <div class="row">
-            <div class="one-half column">
-                <h5>Latest Project News</h5>
-                <p>Text describing the latest project news</p>
-                <ul>
-                    <li>News item 1</li>
-                    <li>News item 2</li>
-                    <li>News item 3</li>
-                    <li>News item 4</li>
-            </div>
-
-            <div class="one-half column">
+            <div class="column">
                 <h5>Funding Progress</h5>
-                <p>£5045.00 out of £90,000.00</p> 
-                <progress id="funds-raised" max="90000" value="5045">£5045.00</progress>
+                <p>£37,000.00 out of £90,000.00</p> 
+                <progress id="funds-raised" max="90000" value="37000">£37000.00</progress>
 
+            </div>
+        </div>
+        <div class="row news">
+            <div class="column">
+                <h5>Latest Project News</h5>
+                <ul>
+                        <li><a href="images/descent.pdf">Making caving accessible (Descent April/May 2019)
+                            <img src="images/descent.png"></a></li>
+                        
+                        <li><a href="images/aah.pdf">Digging Deep For Caving Dream (All About Horsham)
+                            <img src="images/aah.png"></a></li>
+                </ul>
             </div>
 
         </div>
-    </div>
+        </div>
   </div>
   </div>
 
