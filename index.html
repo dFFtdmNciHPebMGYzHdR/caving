@@ -55,7 +55,7 @@
                                 <li><a href="thecave.html">About the artificial cave</a></li>
                                 <li><a href="http://www.secro.co.uk/">SECRO</a></li>
                                 <li><a href="https://wonderful.org/fundraiser/pauldoldmemorialartificialcaveproject-33f78d15">Donate via Wonderful.org</a></li>
-                                <li><a href="mailto:test@test.com?Subject=Artificial%20Cave%20Project">Get in Contact</a></li>
+                                <li><a href="mailto:martinjdold@gmail.com?Subject=Artificial%20Cave%20Project">Get in Contact</a></li>
                         </ul>
                 </div>
 
@@ -80,7 +80,7 @@
                     <img id="slideshow" style="max-width: 100%; max-height: 16em;" src="images/3dmodel.jpg" />
                     <script>
                         var next = 0;
-                        var images = ["hangfast.jpg", "donate.jpg", "3dmodel.jpg", "plan.jpg"];
+                        var images = ["hangfast.jpg", "donate.jpg", "3dmodel.jpg", "plan.jpg", "site_clear_1.jpg", "site_clear_2.jpg"];
                         setInterval(function() { 
                                 document.getElementById("slideshow").src = "images/" + images[next];
                                 next = (next + 1) % images.length;
@@ -96,9 +96,28 @@
       <div class="row">
             <div class="column">
                 <h5>Funding Progress</h5>
-                <p>£37,000.00 out of £90,000.00</p> 
+                <p>£40,000.00 out of £90,000.00</p> 
                 <progress id="funds-raised" max="90000" value="37000">£37000.00</progress>
 
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h5>With Thanks To</h5>
+                <h6 id="slideshow_thanks_heading">British Cave Research Association</h6>
+                    <img id="slideshow_thanks" style="max-width: 100%; max-height: 16em;" src="images/bcra.gif" />
+                    <script>
+                        var next_thanks = 0;
+                        var images_thanks = ["bcra.gif", "hdsc.jpg", "kier.png", "campbellreith.png", "onestop.png", "gatwick.svg", "hdc.png"];
+                        var thanks = ["British Cave Research Association", "Horsham District Scout Council", "Kier Constructon", "Campbell Reith Structural Engineers", "One Stop Convenience Store", "Gatwick Airport", "Horsham District Council"];
+                        setInterval(function() { 
+                                document.getElementById("slideshow_thanks").src = "images/" + images_thanks[next_thanks];
+                                document.getElementById("slideshow_thanks_heading").innerHTML = thanks[next_thanks];
+                                next_thanks = (next_thanks + 1) % images_thanks.length;
+                        }, 3000);
+                    </script>
+                
             </div>
         </div>
         
