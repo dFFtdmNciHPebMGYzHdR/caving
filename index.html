@@ -105,19 +105,24 @@
         <div class="row">
             <div class="column">
                 <h5>With Thanks To</h5>
-                <h6 id="slideshow_thanks_heading">British Cave Research Association</h6>
-                    <img id="slideshow_thanks" style="max-width: 100%; max-height: 16em;" src="images/bcra.gif" />
-                    <script>
-                        var next_thanks = 0;
-                        var images_thanks = ["bcra.gif", "hdsc.jpg", "kier.png", "campbellreith.png", "onestop.png", "gatwick.svg", "hdc.png"];
-                        var thanks = ["British Cave Research Association", "Horsham District Scout Council", "Kier Constructon", "Campbell Reith Structural Engineers", "One Stop Convenience Store", "Gatwick Airport", "Horsham District Council"];
-                        setInterval(function() { 
-                                document.getElementById("slideshow_thanks").src = "images/" + images_thanks[next_thanks];
-                                document.getElementById("slideshow_thanks_heading").innerHTML = thanks[next_thanks];
-                                next_thanks = (next_thanks + 1) % images_thanks.length;
-                        }, 3000);
-                    </script>
-                
+                <div id="with_thanks">
+                    <a id="slideshow_thanks_url" href="https://bcra.org.uk/">
+                    <img id="slideshow_thanks" src="images/bcra.gif" />
+                    <h6 id="slideshow_thanks_heading">British Cave Research Association</h6>
+                    </a>
+                        <script>
+                            var next_thanks = 0;
+                            var images_thanks = ["bcra.gif", "hdsc.jpg", "kier.png", "campbellreith.png", "onestop.png", "gatwick.svg", "hdc.png"];
+                            var thanks = ["British Cave Research Association", "Horsham District Scout Council", "Kier Constructon", "Campbell Reith Structural Engineers", "One Stop Convenience Store", "Gatwick Airport", "Horsham District Council"];
+                            var thanks_url = ["https://bcra.org.uk", "https://horshamscouts.com", "https://www.kier.co.uk", "https://www.campbellreith.com/", "https://www.onestop.co.uk", "https://www.gatwickairport.com", "https://www.horsham.gov.uk/"];
+                            setInterval(function() { 
+                                    document.getElementById("slideshow_thanks").src = "images/" + images_thanks[next_thanks];
+                                    document.getElementById("slideshow_thanks_heading").innerHTML = thanks[next_thanks];
+                                    document.getElementById("slideshow_thanks_url").href = thanks_url[next_thanks];
+                                    next_thanks = (next_thanks + 1) % images_thanks.length;
+                            }, 3000);
+                        </script>
+                </div>
             </div>
         </div>
         

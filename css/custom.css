@@ -166,3 +166,13 @@ button {
         border-left: none;
 }
 }
+
+#with_thanks {
+    height: 10em;
+    text-align: center;
+}
+
+#slideshow_thanks {
+    max-height: 8em;
+}
+
